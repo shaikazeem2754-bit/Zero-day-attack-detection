@@ -1,0 +1,142 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-03-25T16:10:17.319363",
+    "data": {
+      "message": "Genesis Block - Intrusion Detection System"
+    },
+    "previous_hash": "0",
+    "hash": "0071b2ab2e8ae86bbe502777c4642cdd231bbe31ab0faf8d58d1900926d40273",
+    "nonce": 313
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-03-25T16:12:13.890229",
+    "data": {
+      "detection": {
+        "timestamp": "2026-03-25T16:12:13.832558",
+        "features": {
+          "Letter": "f",
+          "x_box": "4.672307372",
+          "y_box": "6.730989823",
+          "width": "4.370592447",
+          "height": "5.125079371",
+          "onpix_total": "1.184114964",
+          "x_bar": "9.053127698",
+          "y_bar": "7.540858628",
+          "x2_bar": "4.043295961",
+          "y2_bar": "8.949805002",
+          "xy_bar": "6.885587593",
+          "x2y_bar": "4.701349878",
+          "xy2_bar": "10.83393419",
+          "x_ege": "1.305984533",
+          "xegvy": "4.879205442",
+          "y_ege": "2.423195167",
+          "yegvx": "8.948915558"
+        },
+        "model_results": {
+          "Random Forest": {
+            "result": "\u26a0\ufe0f ATTACK DETECTED - attack",
+            "prediction": "attack",
+            "confidence": 0.96,
+            "threat_level": "High"
+          },
+          "Logistic Regression": {
+            "result": "\u26a0\ufe0f ATTACK DETECTED - attack",
+            "prediction": "attack",
+            "confidence": 0.8522779558239644,
+            "threat_level": "High"
+          },
+          "KNN": {
+            "result": "\u26a0\ufe0f ATTACK DETECTED - attack",
+            "prediction": "attack",
+            "confidence": 0.6,
+            "threat_level": "High"
+          },
+          "Contrastive Autoencoder": {
+            "result": "\u2713 Normal Pattern Detected",
+            "reconstruction_error": 0.31676167249679565,
+            "anomaly_score": 0.0,
+            "threshold": 1.0227148234844208,
+            "threat_level": "Low"
+          },
+          "ProtoNet": {
+            "result": "\u2713 Classified as: normal",
+            "min_distance": 2.890394616935685,
+            "closest_class": 1,
+            "threat_level": "Low"
+          }
+        }
+      },
+      "overall_threat_level": "High"
+    },
+    "previous_hash": "0071b2ab2e8ae86bbe502777c4642cdd231bbe31ab0faf8d58d1900926d40273",
+    "hash": "003450217d82f35ae70e743596e40af28c8ac234099d41f6374a79061fc1e44c",
+    "nonce": 73
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-03-30T20:36:43.279918",
+    "data": {
+      "detection": {
+        "timestamp": "2026-03-30T20:36:42.969417",
+        "features": {
+          "Letter": "E",
+          "x_box": "'5.505156979083098",
+          "y_box": "'6.903895077020888",
+          "width": "'3.143153088593457",
+          "height": "'8.036417847882749",
+          "onpix_total": "'1.8042242348635344",
+          "x_bar": "'3.3103064587362327",
+          "y_bar": "'6.441665995920779",
+          "x2_bar": "'4.843611227710353",
+          "y2_bar": "'2.3704313442443135",
+          "xy_bar": "'6.588321129294427",
+          "x2y_bar": "'1.707257958573944",
+          "xy2_bar": "'3.427944881982505",
+          "x_ege": "'3.0090832421769607",
+          "xegvy": "'6.079344497303559",
+          "y_ege": "'2.663874679693836",
+          "yegvx": "'3.1193497693147583"
+        },
+        "model_results": {
+          "Random Forest": {
+            "result": "\u2713 Normal Traffic Detected",
+            "prediction": "normal",
+            "confidence": 0.73,
+            "threat_level": "Low"
+          },
+          "Logistic Regression": {
+            "result": "\u2713 Normal Traffic Detected",
+            "prediction": "normal",
+            "confidence": 0.9995897758257346,
+            "threat_level": "Low"
+          },
+          "KNN": {
+            "result": "\u2713 Normal Traffic Detected",
+            "prediction": "normal",
+            "confidence": 1.0,
+            "threat_level": "Low"
+          },
+          "Contrastive Autoencoder": {
+            "result": "\u26a0\ufe0f ANOMALY DETECTED - Potential Zero-Day Attack!",
+            "reconstruction_error": 5.108989715576172,
+            "anomaly_score": 0.0,
+            "threshold": 1.023179531097412,
+            "threat_level": "Critical"
+          },
+          "ProtoNet": {
+            "result": "\u2713 Classified as: normal",
+            "min_distance": 8.04110827271139,
+            "closest_class": 1,
+            "threat_level": "Low"
+          }
+        }
+      },
+      "overall_threat_level": "Critical"
+    },
+    "previous_hash": "003450217d82f35ae70e743596e40af28c8ac234099d41f6374a79061fc1e44c",
+    "hash": "009e5904a402937e15a6776cd56dde9356297dafdfbb9a7d2dcf5797d18c0a96",
+    "nonce": 99
+  }
+]
